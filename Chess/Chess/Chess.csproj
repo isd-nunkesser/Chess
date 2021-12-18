@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\PlayWithHumanPage.xaml.cs">
+      <DependentUpon>PlayWithHumanPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\RulesPage.xaml.cs">
+      <DependentUpon>RulesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PlayWithComputerPage.xaml.cs">
+      <DependentUpon>PlayWithComputerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PuzzlePage.xaml.cs">
+      <DependentUpon>PuzzlePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ChessMenuPage.xaml.cs">
+      <DependentUpon>ChessMenuPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Boardview.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PlayWithHumanPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

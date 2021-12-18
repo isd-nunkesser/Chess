@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Chess.Views.ChessMenuPage"
+             Title="Sadness is Harsh"
+             xmlns:local="clr-namespace:Chess.ViewModels"  
+             xmlns:model="clr-namespace:Chess.Models"  
+             x:Name="BrowseItemsPage"
+             BackgroundImageSource="checkered.jpg">
+
+    <StackLayout>
+        <Button Text="Play with a friend"
+                HorizontalOptions="Center"
+                Margin="0, 200, 0, 10"
+                Clicked="OnPlayWithHumanButtonClicked" />        
+        
+        <Button Text="Play with the Computer"
+                HorizontalOptions="Center"
+                Margin="0, 0, 0, 10"
+                Clicked="OnPlayWithComputerButtonClicked" />        
+        
+        <Button Text="Rules"
+                HorizontalOptions="Center"
+                Clicked="OnRulesButtonClicked" />
+    </StackLayout>
+</ContentPage>

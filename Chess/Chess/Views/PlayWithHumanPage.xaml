@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Chess.Views.PlayWithHumanPage"
+             Title="Play With Stockfish">
+    <StackLayout Orientation="Vertical"  HorizontalOptions="Center">
+            <Label FontSize="20" HorizontalOptions="Center" x:Name="Player1">Player1</Label>
+            <Grid ColumnSpacing="0" RowSpacing="0" x:Name="UniformGrid" RowDefinitions="45, 45, 45, 45, 45, 45, 45, 45" ColumnDefinitions="45, 45, 45, 45, 45, 45, 45, 45">
+            </Grid>
+            <Label FontSize="20" HorizontalOptions="Center" x:Name="Player2">Player2</Label>
+    </StackLayout>
+</ContentPage>
